@@ -21,7 +21,7 @@ class PhoneDialerActivity : ComponentActivity() {
             PhoneDialerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "Androd",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
