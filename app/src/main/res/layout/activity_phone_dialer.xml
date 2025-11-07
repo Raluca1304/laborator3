@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:enabled="false"
+           />
+
+        <ImageButton
+            android:id="@+id/imageButtonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            android:contentDescription="Edit number"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="6"
+        android:columnCount="3"
+        android:layout_marginTop="16dp">
+
+        <Button android:id="@+id/button1" android:text="1" />
+        <Button android:id="@+id/button2" android:text="2" />
+        <Button android:id="@+id/button3" android:text="3" />
+        <Button android:id="@+id/button4" android:text="4" />
+        <Button android:id="@+id/button5" android:text="5" />
+        <Button android:id="@+id/button6" android:text="6" />
+        <Button android:id="@+id/button7" android:text="7" />
+        <Button android:id="@+id/button8" android:text="8" />
+        <Button android:id="@+id/button9" android:text="9" />
+        <Button android:id="@+id/buttonStar" android:text="*" />
+        <Button android:id="@+id/buttonZero" android:text="0" />
+        <Button android:id="@+id/buttonHash" android:text="#" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone_call__2_"
+            android:contentDescription="Call" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone_call__3_"
+            android:contentDescription="End call"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
 
 </LinearLayout>
